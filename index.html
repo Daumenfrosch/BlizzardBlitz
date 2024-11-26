@@ -132,7 +132,7 @@
 
 
   <div id="buttonContainer">
-    <button id="startButton">Load Game V3</button>
+    <button id="startButton">Load Game V4</button>
   </div>
 
   
@@ -197,7 +197,7 @@
         // console.log("Nama: " + data.name);
         console.log("Email: " + data.email);
         // console.log("Picture: " + data.picture);
-        // var tikData = {imageUrl: data.picture, nickname: data.name, email: data.email};
+        var tikData = {imageUrl: data.picture, nickname: data.name, email: data.email};
         // console.log("AllData: ", data);
         // startGame();
         unityInstance.SendMessage('FirebaseBridge', 'OnSuccessLoginGoogle', JSON.stringify(tikData));
