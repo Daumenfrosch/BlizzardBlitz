@@ -125,8 +125,16 @@
   <div class="background-fullscreen"></div>
   
   <div class="background-layer"></div>
+
+  <!-- responsive canvas -->
+  <div class="unity-container" style="display: flex; justify-content: center; align-items: center; height: 100%;" id="WebGLWindow:Canvas:ParentNode">
+    <canvas id="unity-canvas" width="600" height="960" tabindex="-1" style="height: 100%; width: auto; z-index: 10000; cursor: default;"></canvas>
+  </div>
   
+  <!-- old, non-responsive canvas
   <canvas id="unity-canvas" width="600" height="960" tabindex="-1"></canvas>
+  -->
+  
   <script src="Build/Blizzard.loader.js"></script>
 
 
